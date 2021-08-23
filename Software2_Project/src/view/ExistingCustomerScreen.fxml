@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExistingCustomerScreenController">
+   <children>
+      <Button fx:id="exitButton" layoutX="660.0" layoutY="600.0" mnemonicParsing="false" onAction="#exitScreen" prefHeight="40.0" prefWidth="79.0" text="Exit" />
+      <TextField fx:id="addressIdTextfield" disable="true" editable="false" layoutX="55.0" layoutY="410.0" prefHeight="25.0" prefWidth="149.0" promptText="addressId" />
+      <TextField fx:id="addressTextfield" layoutX="510.0" layoutY="200.0" prefHeight="25.0" prefWidth="280.0" promptText="address" />
+      <TextField fx:id="address2Textfield" layoutX="510.0" layoutY="270.0" prefHeight="25.0" prefWidth="280.0" promptText="address2" />
+      <TextField fx:id="cityIdTextfield" disable="true" editable="false" layoutX="300.0" layoutY="410.0" promptText="cityId" />
+      <TextField fx:id="postalCodeTextfield" layoutX="510.0" layoutY="410.0" promptText="postalcode" />
+      <TextField fx:id="phoneTextfield" layoutX="510.0" layoutY="550.0" promptText="phone" />
+      <Label fx:id="newCustTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="40.0" prefHeight="40.0" prefWidth="316.0" text="Existing Customer" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="addressIDLabel" layoutX="55.0" layoutY="380.0" text="Address ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="addressLabel" layoutX="510.0" layoutY="170.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="address2Label" layoutX="510.0" layoutY="240.0" text="Address 2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cityIdLabel" layoutX="300.0" layoutY="380.0" text="City ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="postalCodeLabel" layoutX="510.0" layoutY="380.0" text="Postal Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneLabel" layoutX="510.0" layoutY="520.0" text="Phone Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveButton" layoutX="436.0" layoutY="600.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="40.0" prefWidth="79.0" text="Save" />
+      <Label fx:id="customerNameLabel" layoutX="510.0" layoutY="100.0" text="Customer Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNameTextfield" layoutX="510.0" layoutY="130.0" prefHeight="25.0" prefWidth="280.0" promptText="Customer Name" />
+      <TableView fx:id="existingCustTable" layoutX="55.0" layoutY="95.0" prefHeight="221.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="custIDColumn" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="custNameColumn" prefWidth="344.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="551.0" layoutY="600.0" mnemonicParsing="false" onAction="#deleteChanges" prefHeight="40.0" prefWidth="79.0" text="Delete" />
+      <Label fx:id="tableMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="322.0" prefHeight="17.0" prefWidth="420.0" text="Please select an existing customer from the table above." textAlignment="CENTER" />
+      <Label fx:id="cityLabel" layoutX="510.0" layoutY="310.0" text="City">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cityTextfield" layoutX="510.0" layoutY="340.0" promptText="city" />
+      <Label fx:id="countryLabel" layoutX="510.0" layoutY="450.0" text="Country">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="countryTextfield" layoutX="510.0" layoutY="480.0" promptText="country" />
+      <Label fx:id="activeLabel" layoutX="55.0" layoutY="450.0" text="Active">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="activeTextfield" disable="true" editable="false" layoutX="55.0" layoutY="480.0" promptText="1 or 0" />
+      <TextField fx:id="countryIdTextfield" disable="true" editable="false" layoutX="300.0" layoutY="480.0" promptText="countryId" />
+      <Label fx:id="countryIdLabel" layoutX="302.0" layoutY="450.0" text="Country ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children> 
+</AnchorPane>

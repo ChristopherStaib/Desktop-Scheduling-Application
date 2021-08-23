@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalendarScreenController">
+   <children>
+      <Label fx:id="calendarTitleLabel" contentDisplay="CENTER" layoutX="365.0" layoutY="16.0" text="Calendar" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="weekRadioButton" layoutX="110.0" layoutY="27.0" mnemonicParsing="false" onAction="#weeklyButtonSelected" text="Week">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="monthRadioButton" layoutX="630.0" layoutY="26.0" mnemonicParsing="false" onAction="#monthlyButtonSelected" text="Month">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="calendarTable" layoutY="70.0" prefHeight="360.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="apptIdCol" prefWidth="51.0" text="ApptId" />
+          <TableColumn fx:id="custIdCol" prefWidth="66.0" text="CustId" />
+            <TableColumn fx:id="userIdCol" minWidth="0.0" prefWidth="81.0" text="UserId" />
+            <TableColumn fx:id="custNameCol" prefWidth="164.0" text="Customer Name" />
+            <TableColumn fx:id="userCol" minWidth="7.0" prefWidth="99.0" text="User" />
+            <TableColumn fx:id="typeCol" minWidth="0.0" prefWidth="95.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="172.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="171.0" text="End" />
+        </columns>
+      </TableView>
+      <Button fx:id="exitButton" layoutX="813.0" layoutY="446.0" mnemonicParsing="false" onAction="#exitScreen" prefHeight="40.0" prefWidth="73.0" text="Exit" />
+      <Button fx:id="filterAppointmentButton" layoutX="15.0" layoutY="446.0" mnemonicParsing="false" onAction="#filterAppointmentAction" prefHeight="40.0" prefWidth="165.0" text="Filter - Appointment" />
+      <Button fx:id="filterScheduleButton" layoutX="200.0" layoutY="446.0" mnemonicParsing="false" onAction="#filterScheduleAction" prefHeight="40.0" prefWidth="165.0" text="Filter - Schedule" />
+      <Button fx:id="filterCustomerButton" layoutX="385.0" layoutY="446.0" mnemonicParsing="false" onAction="#filterCustomerAction" prefHeight="40.0" prefWidth="165.0" text="Filter - Customer" />
+      <Button fx:id="resetButton" layoutX="720.0" layoutY="446.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="73.0" text="Reset" />
+   </children>
+</AnchorPane>

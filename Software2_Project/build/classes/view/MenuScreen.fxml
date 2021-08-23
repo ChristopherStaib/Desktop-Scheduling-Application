@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuScreenController">
+    <children>
+        <Button fx:id="logoutButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="249.0" layoutY="329.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="32.0" prefWidth="119.0" text="Logout">
+            <effect>
+                <Lighting bumpInput="$null" diffuseConstant="1.16" specularConstant="0.58" surfaceScale="0.0">
+                    <light>
+                        <Light.Distant color="#b8fff3" />
+                    </light>
+                </Lighting>
+            </effect>
+        </Button>
+        <Button fx:id="customerButton" layoutX="50.0" layoutY="150.0" mnemonicParsing="false" onAction="#customerClick" prefHeight="149.0" prefWidth="153.0" text="Customer" />
+        <Button fx:id="appointmentButton" layoutX="232.0" layoutY="150.0" mnemonicParsing="false" onAction="#AppointmentClick" prefHeight="149.0" prefWidth="153.0" text="Appointments" />
+        <Button fx:id="calendarButton" layoutX="416.0" layoutY="150.0" mnemonicParsing="false" onAction="#CalendarClick" prefHeight="149.0" prefWidth="153.0" text="Calendar" />
+        <Label fx:id="menuLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="20.0" prefHeight="92.0" prefWidth="126.0" style="-fx-text-fill: black;" text="Menu">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+      <Label fx:id="welcomeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="14.0" prefHeight="92.0" prefWidth="79.0" text="Welcome back" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      
+    </children>
+</AnchorPane>
