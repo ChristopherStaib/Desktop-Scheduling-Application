@@ -1,5 +1,7 @@
 Scheduling Desktop Application README
 
+**Database provided by the University appears to be no longer usable after graduation.**
+
 Usage: 
 -Use logins provided from sql Database.
 -Use Customer Screen - New or Existing to create or update Customer Information.
